@@ -7,7 +7,7 @@ Test Teardown    Take Screenshot
 *** Test Cases ***
 Deve iniciar o cadastro do cliente
     [Tags]    smoke
-    ${account}    Create Dictionary    name=Fernando Papito    email=papito@msn.com    cpf=06097411871
+    ${account}    Create Dictionary    name=Papito Fernando    email=papito@msn.com    cpf=06097411871
     Delete Account By Email    ${account}[email]
     Submit Signup Form    ${account}
     Verify Welcome Message
